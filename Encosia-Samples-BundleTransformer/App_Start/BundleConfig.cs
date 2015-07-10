@@ -24,11 +24,11 @@ namespace Encosia_Samples_BundleTransformer
                 "~/Scripts/bootstrap.js",
                 "~/Scripts/respond.js"));
 
-      bundles.Add(new StyleBundle("~/Content/css")
+      bundles.Add(new StyleBundle("~/bundles/css/site")
         .Include("~/Content/bootstrap.css",
-                 "~/Content/site.less"));
+                 "~/Content/base.less"));
 
-      bundles.GetBundleFor("~/Content/css")
+      bundles.GetBundleFor("~/bundles/css/site")
         .Transforms.Add(new StyleTransformer());
     }
   }
